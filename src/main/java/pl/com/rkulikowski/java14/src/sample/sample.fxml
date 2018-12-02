@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="firstNumber" layoutX="101.0" layoutY="90.0" />
+        <Label layoutX="154.0" layoutY="65.0" text="Liczba 1" />
+        <TextField fx:id="secondNumber" layoutX="101.0" layoutY="158.0" />
+        <Label layoutX="154.0" layoutY="134.0" text="Liczba 2" />
+        <TextField fx:id="actionType" layoutX="101.0" layoutY="225.0" />
+        <Label layoutX="151.0" layoutY="200.0" text="Działanie" />
+        <Label layoutX="159.0" layoutY="322.0" text="Wynik" />
+        <TextArea fx:id="resultArea" layoutX="20.0" layoutY="348.0" prefHeight="81.0" prefWidth="310.0" />
+      <Button layoutX="149.0" layoutY="271.0" mnemonicParsing="false" onAction="#clickButton" text="Oblicz" />
+    </children>
+</Pane>

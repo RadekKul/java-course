@@ -15,9 +15,10 @@ public class Main {
             }
         };
 
+        plane.fly();
+
         // lambda   (wywolanie jedynej metody w tym interface wiec nie pyta nas ktora metode, pyta tylko o parametr, tutaj puste nawiasy bo nie przyjmuje metoda zadnych parametrow)
         Flyable bullet = () -> System.out.println("Bullet can fly");    // dla referencji bullet typu Flyable (interface) wywolaj jedyna metode, ()- brak parametrow do przekazania i zrob to co po -> (ciało metody)
-
 
         // teraz dla moveable - pierwsza klasa anonimowa, druga lambad
 
@@ -75,12 +76,12 @@ public class Main {
 
         // tak bysmy zrobili po staremu
 
-      /*  cleaner.clean(new Flyable() {
+       cleaner.clean(new Flyable() {
             @Override
             public void fly() {
                 System.out.println("fly");
             }
-        });*/
+        });
 
       // a tutaj z lambda
         cleaner.clean(() -> System.out.println("fly"));

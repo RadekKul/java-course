@@ -18,6 +18,7 @@ public class Main {
                 new Country("Spain",30_000_000, 552,2100)
         );
 
+
         getListOfRchCountries(countries,4200);
 
         getListOfPeople(countries,50_000_000);

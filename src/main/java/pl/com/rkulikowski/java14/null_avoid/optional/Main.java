@@ -53,13 +53,21 @@ public class Main {
     // ifPresent przekazuje obiekt do interface Consumer, i przyjmuje dany typp.
 
 
+    //flatMap uzywamy jezeli Optional(opakowanie) zostalo zrobione w geterach i seteraach tylko pakujemy dopiero tu, opakowanie ma dwie wartosci, albo cos zawiera albo nic (null)
+    // map uzywamy jak chcemy cos opakowac bo nie opakowalismy tego wczesniej w geterach i seterach. Program idzie w dół i sprawdza pokolei czy pudelko cos zawiera
+    // jezeli tak to np z house pobiier bathroom i idzie dalej, znow sprawdza czy pudelko pelne czy puste, jak pelne to pobiera sink i idzie dalej, jak spotka null to konczy wykonywanie
+
     private static void printLabelWithLambda2(House house){
 
-        Optional.ofNullable(house)                          // opakowujemy przekazany dom w ofNullable, zeby sobie wywalic mozliwe nulle, a potem lecimy juz z ifPressent
-                .flatMap(house1 -> house1.getBathroom())    // to jest rzutowanie, zamienianie jednego obiektu w drugi, zeby mozna bylo posprawdzac
+
+        Optional.ofNullable(house)
+                // opakowujemy przekazany dom w ofNullable, zeby sobie przepuscic w razie czego mozliwe nulle
+                .flatMap(house1 -> house1.getBathroom())
+                // to jest rzutowanie, zamienianie jednego obiektu w drugi, zeby mozna bylo posprawdzac
                 .flatMap(bathroom -> bathroom.getSinkl())
-                        .map(sink -> sink.getLabel())       // tutaj juz nie robimy flatMap, bo nie potrzebne nam kolejne pudelko, bo to juz jest ostatnie odwoalnie do String a nie do Optional
-                        .ifPresent(s -> System.out.println("label: " + s));
+                // tutaj juz nie robimy flatMap, bo nie potrzebne nam kolejne pudelko, bo to juz jest ostatnie odwoalnie do String a nie do Optional
+                .map(sink -> sink.getLabel())
+                .ifPresent(s -> System.out.println("label: " + s));
     }
 
     //Ważne:  samo Map dajemy jesli metoda mapujaca nie zwraca Optionala tylko zwykly jakis typ, a flatMap dajemy jak metoda zwraca Optionala.

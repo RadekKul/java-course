@@ -20,6 +20,7 @@ public class Main {
     }
 
     // sprawdzamy czy nie ma nulla wpisanego w taki sposob, operujac na .map bo to nie sa Optionalem w tym momencie tylko getery zwykle, jakby byly optional to bysmy uzyli flatMap
+    // jak spotka nulla na drodze to po prostu przestaje gadac
 
     private static void printLabelWithLambda(House house){
         Optional.ofNullable(house)

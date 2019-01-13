@@ -22,12 +22,15 @@ public class ArrayFirstExample {
 
         for (int i=0 ; i<firstArray.length ; i++){      // sprawdzamy az do konca dlugosci tablicy, od 0 bo pierwszy index to 0, az do jej dlugosci, zeby wykorzystac wszystkie elementy
             firstArray[i]=i+1;
+            System.out.println(firstArray[i]);
         }
 
         Animal[] animals = makeAnimals(); // stwarzamy tablice animals typu Animal - poprzez metode ( metoda zwraca nam animalArray, i przypisuje do tablicy animals)
         for(int i = 0; i<animals.length; i++){  // wywolujemy petle for recznie dla tablicy
             System.out.println(animals[i]);
         }
+
+        System.out.println();
 
         for(Animal aaa: animals){    // dla kazdego elementu typu Animal z tablicy animals, ktory bedzie nazwany w ciele aaa, wykonaj to co w ciele petli. To samo co wyzej tylko prosciej
             System.out.println(aaa);

@@ -50,7 +50,9 @@ public class ListFirstExample {
             System.out.println("Day of the week: " + weekDay);
             for (Plant plant : plants) {       // dla kazdego elementu (kazdej roslny ) z listy plants (niewazne czy kaktus czy roza) wykonujemy dane czynnosci
                 gardener.waterPlant(plant);
+                System.out.println("Gave water to " + plant + "the plant in " + weekDay);
                 gardener.makePlantGrow(plant);
+                System.out.println(plant + " grows - " + weekDay);
             }
         }
 

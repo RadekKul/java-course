@@ -19,9 +19,6 @@ public class FindNumbers {
         Random random = new Random();   // tworzymy obiekt ktory nam bedzie losowal cos
 
 
-
-
-
         for(int i =0; i<500;i++){
             integerList.add(random.nextInt(101));  // 101 bo random "Wyłącznie" bez 101
         }

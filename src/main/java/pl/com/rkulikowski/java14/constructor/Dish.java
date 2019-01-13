@@ -5,7 +5,7 @@ public class Dish {
     private String kind;
 
     {
-        System.out.println("Dish - First init block"); // tzw blok niestetyczny (initializujący), wypisuje się ze kazdym razem gdy wywolany jest konstruktor - przed nim, (wywolywane są zanim blok cialo constructora sie wykona)
+        System.out.println("Dish - First init block"); // tzw blok niestatyczny (initializujący), wypisuje się ze kazdym razem gdy wywolany jest konstruktor - przed nim, (wywolywane są zanim blok cialo constructora sie wykona)
     }
 
     static { // blok statyczny jest wywolywany tylko raz podczas rozpoczecia wykonywania obiektów, dlatego pojawia sie tylko przy pierwszym wywolanym obiekcie. Wywolaja sie w kolejnosci z pliku zrodłowego

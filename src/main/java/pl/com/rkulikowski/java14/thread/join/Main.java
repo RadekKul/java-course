@@ -16,7 +16,7 @@ public class Main {
         //worker1.start(); // nie mozna awrzucic startu przed daemonami bo wtedy puscsimy watek i bedziemy chiceli go zaraz ograniczac a tak sie nie da bo nie wiemy w ktorym momencie wykonywania juz bedzie
 
         // wywolujemy Daemon przed startem - deamon stopuje wszystkie "dzieci" watku main, jak main sie konczy, reszta watkow zostaje zastopowana przez demony
-        // worker1.setDaemon(true);
+        worker1.setDaemon(true);
 
         Thread worker2 = new Thread(job);
         Thread worker3 = new Thread(job);
@@ -50,7 +50,7 @@ public class Main {
        // ta metoda wykonuje sie zawsze na watku w ktorym to jest uzywane
         // zeby uspic konkretny watek trzeba by go uspic w jego job-ie czyli podczas pracy by dostal przerwe przez Thread.sleep i tez lapiemy wyjatek
         try{
-            Thread.sleep(20);
+            Thread.sleep(17);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

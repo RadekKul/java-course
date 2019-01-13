@@ -3,7 +3,7 @@ package pl.com.rkulikowski.java14.access;
 public class Main {
 
     public static void main(String[] args) {
-        Person me = new Person("Jan", "Kowalski", -2);
+        Person me = new Person("Jan", "Kowalski", 2);
 
         System.out.println(me); // system SOUT zawsze wywoluje toString z danego obiektu
         me.setAge(-20);

@@ -24,7 +24,7 @@ public class MapFirstExample {
         for(String key :idsOverNames.keySet()) {    //metodka keySet() to przejscie po kazdym kluczu,
             System.out.println("Key: " + key + ", value: " + idsOverNames.get(key)); // tutaj get(key) wolamy wartosc przypisana do danego klucza, klucz jest jeden, jezeli na ten sam klucz wpiszemy inna wartosc
             // to mapa sama nam ją podmieni na najnowsza wartość. Jednak Pesel np jest unikalny dla kazdej osoby, wiec nigdy by sie nic nie powtorzylo
-        }
+        }   // wyswietli nam od najmniejszego do najwiekszego klucza, a nie tak jak dodawalismy od 92 do 95
 
         Map<String,String> secondMap = new LinkedHashMap<>(); // znowu szybka mapa na hashah, ale nie bedzie kolejnosci.
 

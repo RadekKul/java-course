@@ -15,6 +15,7 @@ public class Main {
             }
         };
 
+
         processor.processAnimal(parrot);
 
         // tutaj to samo

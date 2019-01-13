@@ -29,7 +29,7 @@ public class Person {
 
     private <T> T validate(T value){
         if (value == null){
-            throw new IllegalArgumentException("Cannot be null, Goodbye!!");
+            throw new IllegalArgumentException("Cannot be null, Goodbye  !");
         }
         return value;
     }
@@ -37,6 +37,7 @@ public class Person {
 
     public static void main(String[] args) {
         validate("Radek", "Kul", null);
+
 
 
 

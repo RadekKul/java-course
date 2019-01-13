@@ -15,6 +15,6 @@ public class Person implements Nervous {  // aby implementowac jakis interfejs, 
 
     @Override
     public void introduceYourself() {
-
+        System.out.println("I am: " + name);
     }
 }

@@ -42,6 +42,7 @@ public class HomeTest {
 
         Animal dog3 = new Dog();        // ten pies bedzie mogl uzyc tylko metody dla Animal i Object, nie bedzie mogl uzyc metod ktore sa tylko dla Dog()
 
+
         genericAnimal.enterHome(dog3);  // Mozemy tak napisac bo referencja dog3 jest typu Animal, a genericAnimal to pudelko na Animal, gdybysmy to dali dogeneric Dog to by sie nie dalo
                                         // bo genericDog to pudelko na psy
 

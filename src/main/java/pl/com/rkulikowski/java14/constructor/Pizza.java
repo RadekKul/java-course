@@ -15,7 +15,7 @@ public class Pizza extends Dish {
     }
 
     public Pizza(String additions){
-        super(5);       //Wywolanie konstruktora z nad klasy za pomocą super(5), beargumentowy wywolujemy super()
+        super(5);       //Wywolanie konstruktora z nad klasy za pomocą super(5), bezargumentowy wywolujemy super()
 
         System.out.println("Pizza with additions:" + additions);
     }

@@ -15,7 +15,7 @@ public class Main {
         House withBathroomWithoutSink = new House(withoutSink);
         House withoutBathroom = new House(null);
 
-        displaySinkLabelVeryNaive(withBathroomWithoutSink);     // tu wywali blad bo w naszej prymitywnej metodzie nie mozemy przyjac null, bo tego nie obslugujemy ogolnie.
+        //displaySinkLabelVeryNaive(withBathroomWithoutSink);     // tu wywali blad bo w naszej prymitywnej metodzie nie mozemy przyjac null, bo tego nie obslugujemy ogolnie.
 
     }
 

@@ -33,7 +33,7 @@ public class Main {
     public static void takeObject (Object object){
 
         if(object instanceof String) {  // to jest takie zabezpieczenie sie na rzutowanie, bo jak mamy object jako argument przyjmujacy to mozemy dac wsyzstko nawet int, i inta nie zrzutujemy bo nam sie
-            // wywali program, wiec tutaj sobie blokujemy zeby rzutowalo tylko kiedy przekarzemy Stringa
+            // wywali program, wiec tutaj sobie blokujemy zeby rzutowalo tylko kiedy przekazemy Stringa
             String s = (String) object;
         } else{
             System.out.println("Podano cos innego niz String");
